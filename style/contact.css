@@ -1,0 +1,366 @@
+.intro {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12.6px;
+    line-height: 26px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #F61067;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 67px;
+    color: #30233D;
+}
+
+.bold-description {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 29px;
+    margin: 25px 0px;
+}
+
+.hero-banner .container header .container .nav-items .active {
+  border-bottom: 1px solid #000;
+}
+
+.hero-banner .container header .container .logo h1,
+.hero-banner .container header .container .nav-items li a,
+.hero-banner .container header .container .phone span a,
+.hero-banner .container header .container .logo a {
+    color: #30124E;
+}
+
+.hero-banner .container header .container .hamburger .dropbtn .line,
+.hero-banner .container header .container .hamburger .dropbtn .half-line {
+    background-color: #30124E;
+}
+
+.hero-banner .container header .container .nav-items li::after,
+.hero-banner .container header .container .phone span a::after {
+    border-bottom: 1.5px solid #30124E;
+}
+
+.hero-banner .container header {
+    margin: 0;
+}
+
+.our-team-hb {
+    height: 360px;
+    background-image: url(../imgs/our-team-hb.png);
+    background-size: cover;
+}
+
+.our-team-hb .container {
+    height: 360px;
+    width: 75.5%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-animation: slide-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+.our-team-hb .container h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 80px;
+    color: #F61067;
+}
+
+.our-team-hb .container p {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 37px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #F4F4ED;
+}
+
+.business .container .row {
+    display: flex;
+
+}
+
+.business .container .row .col {
+    flex-basis: 50%;
+}
+
+.business .container .row .col:first-child {
+    background-image: url(../imgs/location-icon-purple.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-color: white;
+    padding: 80px;
+    height: 864px;
+}
+
+@-webkit-keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+.business .container .row .col:first-child .text {
+    width: 70%;
+    margin: 0 auto;
+    -webkit-animation: slide-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.business .container .row .col:first-child .text h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 40px;
+    color: #30233D;
+    max-width: 70%;
+    margin-bottom: 77px;
+}
+
+.business .container .row .col:first-child .text .our-office {
+    display: flex;
+    column-gap: 51px;
+    margin-bottom: 44px;
+}
+
+.business .container .row .col:first-child .text .our-office .icon i {
+    font-size: 40px;
+    color: #F61067;
+}
+
+.business .container .row .col:first-child .text .our-office:nth-child(3) .icon i {
+    font-size: 25px;
+}
+
+
+.business .container .row .col:first-child .text .our-office:nth-child(4) .icon i {
+    font-size: 25px;
+}
+
+.business .container .row .col:first-child .text .our-office .office-inf h2 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 37px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #30233D;
+    margin-bottom: 24px;
+}
+
+.business .container .row .col:first-child .text .our-office .office-inf p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: #776C82;
+    max-width: 50%;
+    text-align: left;
+}
+
+.business .container .row .col:last-child {
+    height: 864px;
+    position: relative;
+}
+
+.business .container .row .col:last-child img {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    -webkit-animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    height: 1224px;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+
+/* Contact Section */
+.contact {
+    background-color: #30124E;
+    height: 600px;
+    z-index: 1;
+}
+
+.contact .container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    height: 50vh;
+}
+
+.contact .container form {
+    position: absolute;
+    top: -200px;
+    width: 100%;
+    background: #150433;
+    z-index: 999;
+    padding: 108px 98px;
+}
+
+.contact .container form h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 40px;
+    color: #FCFCFC;
+}
+
+.contact .container form .row {
+    margin-top: 55px;
+    display: flex;
+    column-gap: 30px;
+}
+
+.contact .container form .row .col:first-child {
+    flex-basis: 40%;
+}
+
+.contact .container form .row .col:first-child label {
+    display: block;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12.6px;
+    line-height: 26px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #FCFCFC;
+}
+
+.contact .container form .row .col:first-child input {
+    margin-bottom: 35px;
+    padding: 15px 20px;
+    width: 100%;
+    border: 1px solid #F4F4ED;
+}
+
+.contact .container form .row .col:first-child input:focus {
+    outline: none;
+    border: none;
+}
+
+.contact .container form .row .col:last-child {
+    flex-basis: 60%;
+}
+
+.contact .container form .row .col:last-child label {
+    display: block;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12.6px;
+    line-height: 26px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #FCFCFC;
+}
+
+.contact .container form .row .col:last-child textarea {
+    resize: none;
+    width: 100%;
+    height: 224px;
+    margin-bottom: 35px;
+    padding: 15px 20px;
+    width: 100%;
+    border: 1px solid #F4F4ED;
+}
+
+.contact .container form .row .col:last-child textarea:focus {
+    outline: none;
+}
+
+.contact .container form .row .col:last-child button {
+    border: none;
+    outline: none;
+    background: #F61067;
+    border-radius: 36px;
+    margin-top: 54PX;
+}
+
+.contact .container form .row .col:last-child button a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13.5px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FCFCFC;
+    padding: 20px 40px;
+}

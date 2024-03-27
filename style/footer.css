@@ -1,0 +1,79 @@
+footer .container {
+    display: flex;
+    background: #30124E;
+    color: white;
+
+}
+
+footer .container .row {
+    display: flex;
+    column-gap: 15px;
+    width: 85%;
+    margin: 50px auto;
+}
+
+footer .container .row .col {
+    flex-basis: 25%;
+}
+
+footer .container .row .col ul {
+    list-style-type: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12.4px;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+footer .container .row .col p {
+    max-width: 60%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.2px;
+    line-height: 26px;
+    color: #FCFCFC;
+}
+
+footer .container .row .col a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .container h1 {
+    display: inline-block;
+    color: white;
+    font-size: 15.6px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #F61067;
+}
+
+footer .container .col:first-child h1 {
+    border: none;
+}
+
+footer .container .col p>i {
+    color: white;
+    padding: 6px;
+}
+
+footer .container .row .col button {
+    background-color: #F61067;
+    border: none;
+    width: 100px;
+    height: 1px;
+    left: 441px;
+    top: 5967px;
+}
+
+footer .copyright .text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    background: #30124E;
+    font-size: 15px;
+    color: white;
+}

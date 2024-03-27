@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Noticia+Text:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+
+.hero-banner .container {
+    width: 87%;
+    margin: 0 auto;
+}
+
+.hero-banner .container header {
+    margin-bottom: 50px;
+}
+
+.hero-banner .container header .container {
+    -webkit-animation: slide-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+@-webkit-keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+.hero-banner .container header .container .logo h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 43px;
+    letter-spacing: 2px;
+    color: #FCFCFC;
+}
+
+.hero-banner .container header .container .logo a {
+    text-decoration: none;
+    color: #Fff;
+}
+
+
+.hero-banner .container header .container .nav-items {
+    display: flex;
+}
+
+.hero-banner .container header .container .nav-items .active {
+    border-bottom: 1px solid #FCFCFC;
+}
+
+.hero-banner .container header .container .nav-items li {
+    margin: 0px 20px;
+    list-style: none;
+    display: inline-block;
+}
+
+.hero-banner .container header .container .nav-items li::after {
+    display: block;
+    content: '';
+    border-bottom: 1.5px solid #FCFCFC;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.hero-banner .container header .container .nav-items li:hover::after {
+    transform: scaleX(1);
+}
+
+.hero-banner .container header .container .nav-items li a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14.4px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    color: #FCFCFC;
+}
+
+.hero-banner .container header .container .phone {
+    display: flex;
+    align-items: center;
+}
+
+.hero-banner .container header .container .phone span {
+    color: #FCFCFC;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.hero-banner .container header .container .phone span a {
+    text-decoration: none;
+    color: #FCFCFC;
+}
+
+.hero-banner .container header .container .phone span a::after {
+    display: block;
+    content: '';
+    border-bottom: 1.5px solid #FCFCFC;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.hero-banner .container header .container .phone span a:hover::after {
+    transform: scaleX(1);
+}
+
+.hero-banner .container header .container .hamburger .dropbtn .line {
+    width: 30px;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #FCFCFC;
+    margin: 3px 0px;
+}
+
+.hero-banner .container header .container .hamburger .dropbtn .half-line {
+    width: 15px;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #FCFCFC;
+    margin: 3px 0px;
+    align-self: flex-end;
+    -webkit-transition: width .2s;
+}
+
+/* Dropdown Button */
+.hero-banner .container header .container .hamburger .dropbtn {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.hero-banner .container header .container .hamburger .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.hero-banner .container header .container .hamburger .dropbtn:hover>.half-line {
+    width: 100%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.hero-banner .container header .container .hamburger .dropdown-content {
+    display: none;
+    position: absolute;
+    background: #F61067;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    -webkit-animation-name: cssAnimation;
+    -webkit-animation-duration: .3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+}
+
+@-webkit-keyframes cssAnimation {
+    from {
+        -webkit-transform: rotate(0deg) scale(0.5) skew(0deg) translate(0px);
+    }
+
+    to {
+        -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+    }
+}
+
+/* Links inside the dropdown */
+.hero-banner .container header .container .hamburger .dropdown-content a {
+    color: #FCFCFC;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+/* Change color of dropdown links on hover */
+.hero-banner .container header .container .hamburger .dropdown-content a:hover {
+    background-color: #af0c4a;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.hero-banner .container header .container .hamburger .show {
+    display: block;
+}
+
+/* Main Hero Banner */
+.hero-banner .container .hb-main {
+    padding: 0px 0px 280px 0px;
+}
+
+.hero-banner .container .hb-main .container .row {
+    display: flex;
+}
+
+.hero-banner .container .hb-main .container .row .main-content {
+    flex-basis: 70%;
+    -webkit-animation: slide-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+.hero-banner .container .hb-main .container .row .main-content .intro-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14.4px;
+    line-height: 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #FCFCFC;
+}
+
+.hero-banner .container .hb-main .container .row .main-content h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 99px;
+    line-height: 118px;
+    color: #FCFCFC;
+}
+
+.hero-banner .container .hb-main .container .row .main-content .box {
+    position: relative;
+    margin-top: 50px;
+}
+
+.hero-banner .container .hb-main .container .row .main-content .box .row {
+    min-width: 865px;
+    position: absolute;
+    left: -200px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 40px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero-banner .container .hb-main .container .row .main-content .box .row p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    color: #FCFCFC;
+}
+
+.hero-banner .container .hb-main .container .row .main-content .box .row .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(196, 196, 196, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.hero-banner .container .hb-main .container .row .main-content .box .row .icon:hover {
+    border: none;
+}
+
+.hero-banner .container .hb-main .container .row .main-content .box .row .icon:hover::before {
+    display: block;
+}
+
+.hero-banner .container .hb-main .container .row .main-content .box .row .icon::before {
+    display: none;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    animation: spin 3s linear infinite;
+    z-index: -1;
+}
+
+.hero-banner .container .hb-main .container .row .main-content .box .row .icon::after {
+    display: none;
+}
+
+@keyframes move-left {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hero-banner .container .hb-main .container .row .main-content .box .row .icon i {
+    width: 14px;
+    color: #fff;
+}
+
+
+.hero-banner .container .hb-main .container .row .main-content .box .row .icon:hover>i {
+    animation: move-left 1s infinite;
+}
+
+.hero-banner .container .hb-main .container .row .main-content .purple {
+    color: #F61067;
+}
+
+.hero-banner .container .hb-main .container .row .scroll {
+    -webkit-animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    flex-basis: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transform: rotate(90deg);
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px) rotate(90deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px) rotate(90deg);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px) rotate(90deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px) rotate(90deg);
+    }
+}
+
+.hero-banner .container .hb-main .container .row .scroll .position .icon i {
+    animation: move-scroll 2s infinite;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@keyframes move-scroll {
+    0% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.hero-banner .container .hb-main .container .row .scroll a {
+    text-decoration: none;
+    color: #FCFCFC;
+}
+
+.hero-banner .container .hb-main .container .row .scroll .position {
+    display: flex;
+    align-items: center;
+}
+
+.hero-banner .container .hb-main .container .row .scroll .position p {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12.6px;
+    line-height: 26px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #FCFCFC;
+}
+
+.hero-banner .container .hb-main .container .row .scroll .position .icon {
+    margin-left: 15px;
+    border: 1px solid #FCFCFC;
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-banner .container .hb-main .container .row .scroll .position .icon i {
+    color: #FCFCFC;
+}
+
+@media only screen and (max-width:767px) {
+    .hero-banner .container header .container .nav-items {
+        display: none;
+    }
+}
